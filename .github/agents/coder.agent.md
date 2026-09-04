@@ -1,6 +1,6 @@
 ---
 name: Coder
-description: Use this agent to implement features, fix bugs, refactor code, add tests, and keep the project consistent with the repository standards.
+description: Use this agent to implement features, fix bugs, refactor code, add tests, and keep the project consistent with the repository standards. This path should use Claude for implementation work.
 model: Claude Sonnet 4
 ---
 

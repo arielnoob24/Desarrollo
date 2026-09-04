@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Perfil completo de Enner Valencia: datos, trayectoria, estilo de juego y logros del delantero ecuatoriano."
+    />
+    <title>Enner Valencia | Perfil completo</title>
+    <style>
+      :root {
+        --bg: #071722;
+        --bg-2: #12314d;
+        --bg-3: #1a3558;
+        --panel: rgba(12, 24, 38, 0.9);
+        --panel-alt: rgba(19, 33, 48, 0.96);
+        --primary: #f8c76b;
+        --secondary: #53d3c6;
+        --tertiary: #91b7ff;
+        --text: #edf6ff;
+        --muted: #c1d0e5;
+        --line: rgba(255, 255, 255, 0.12);
+        --shadow: rgba(3, 9, 17, 0.44);
+        --focus: #7dd3fc;
+        --success: #5ce0a3;
+        --danger: #ff8a8a;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: linear-gradient(140deg, var(--bg), var(--bg-2) 35%, var(--bg-3));
+        color: var(--text);
+        line-height: 1.6;
+      }
+
+      img {
+        max-width: 100%;
+        display: block;
+      }
+
+      a {
+        color: inherit;
+      }
+
+      a:focus-visible,
+      button:focus-visible,
+      [role="tab"]:focus-visible,
+      img:focus-visible {
+        outline: 3px solid var(--focus);
+        outline-offset: 3px;
+      }
+
+      .skip-link {
+        position: absolute;
+        left: 16px;
+        top: -48px;
+        background: var(--primary);
+        color: #091725;
+        padding: 10px 14px;
+        border-radius: 10px;
+        text-decoration: none;
+        z-index: 100;
+        font-weight: 700;
+      }
+
+      .skip-link:focus {
+        top: 16px;
+      }
+
+      .page-shell {
+        width: min(1180px, calc(100% - 32px));
+        margin: 28px auto 48px;
+      }
+
+      .topbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 16px 18px;
+        margin-bottom: 22px;
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        background: rgba(10, 20, 31, 0.54);
+        backdrop-filter: blur(10px);
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+
+      .brand-mark {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 42px;
+        height: 42px;
+        border-radius: 12px;
+        background: linear-gradient(135deg, var(--primary), #f0ae4c);
+        color: #091725;
+        font-weight: 700;
+      }
+
+      .brand small {
+        display: block;
+        color: var(--muted);
+        font-size: 0.72rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .brand strong {
+        font-size: 1rem;
+      }
+
+      .nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .nav a {
+        text-decoration: none;
+        padding: 10px 14px;
+        border-radius: 999px;
+        border: 1px solid var(--line);
+        background: rgba(255, 255, 255, 0.03);
+        color: var(--text);
+        transition: background 0.2s ease, transform 0.2s ease;
+      }
+
+      .nav a:hover,
+      .nav a:focus-visible {
+        background: rgba(248, 199, 107, 0.12);
+        transform: translateY(-1px);
+      }
+
+      .card {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 26px;
+        box-shadow: 0 24px 60px var(--shadow);
+      }
+
+      .hero {
+        display: grid;
+        grid-template-columns: minmax(280px, 420px) minmax(0, 1fr);
+        overflow: hidden;
+      }
+
+      .hero-media {
+        position: relative;
+        min-height: 600px;
+        padding: 18px;
+        background: linear-gradient(180deg, rgba(248, 199, 107, 0.2), rgba(12, 24, 38, 0.9));
+      }
+
+      .hero-media::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(circle at center, rgba(255, 255, 255, 0.18), transparent 48%);
+      }
+
+      .player-photo {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        min-height: 560px;
+        object-fit: cover;
+        border-radius: 22px;
+        border: 4px solid rgba(248, 199, 107, 0.8);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.38);
+      }
+
+      .hero-content {
+        padding: 42px 36px 36px;
+      }
+
+      .pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 14px;
+        border-radius: 999px;
+        border: 1px solid rgba(83, 211, 198, 0.5);
+        background: rgba(83, 211, 198, 0.08);
+        color: var(--secondary);
+        font-size: 0.76rem;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        font-weight: 700;
+      }
+
+      h1 {
+        margin: 18px 0 8px;
+        font-size: clamp(2.8rem, 4vw, 4.5rem);
+        line-height: 0.95;
+      }
+
+      .surname {
+        margin: 0 0 16px;
+        color: var(--primary);
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        font-size: 1rem;
+      }
+
+      .summary {
+        max-width: 60ch;
+        margin: 0;
+        color: var(--muted);
+        font-size: 1.05rem;
+      }
+
+      .hero-stats {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(100px, 1fr));
+        gap: 14px;
+        margin-top: 28px;
+      }
+
+      .stat-box {
+        background: rgba(255, 255, 255, 0.04);
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        padding: 16px 12px;
+      }
+
+      .stat-box strong {
+        display: block;
+        color: var(--primary);
+        font-size: clamp(1.5rem, 2.5vw, 2.2rem);
+        line-height: 1.1;
+      }
+
+      .stat-box span {
+        color: var(--muted);
+        font-size: 0.72rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 28px;
+      }
+
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 46px;
+        padding: 0 18px;
+        border-radius: 12px;
+        border: 1px solid var(--line);
+        background: transparent;
+        color: var(--text);
+        text-decoration: none;
+        font-weight: 700;
+        transition: transform 0.2s ease, opacity 0.2s ease, background 0.2s ease;
+      }
+
+      .button.primary {
+        background: var(--primary);
+        color: #0c1520;
+        border-color: transparent;
+      }
+
+      .button.secondary {
+        background: rgba(255, 255, 255, 0.02);
+      }
+
+      .button:hover,
+      .button:focus-visible {
+        transform: translateY(-1px);
+      }
+
+      .content-grid {
+        display: grid;
+        grid-template-columns: 1.45fr 0.95fr;
+        gap: 22px;
+        margin-top: 22px;
+      }
+
+      .panel {
+        padding: 28px 26px;
+      }
+
+      .panel h2 {
+        margin: 0 0 18px;
+        font-size: 1.7rem;
+      }
+
+      .tabs {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 18px;
+      }
+
+      [role="tab"] {
+        background: rgba(255, 255, 255, 0.02);
+        border: 1px solid var(--line);
+        color: var(--text);
+        padding: 10px 14px;
+        border-radius: 999px;
+        cursor: pointer;
+        font: inherit;
+        font-weight: 700;
+      }
+
+      [role="tab"][aria-selected="true"] {
+        background: rgba(248, 199, 107, 0.15);
+        border-color: rgba(248, 199, 107, 0.6);
+        color: var(--primary);
+      }
+
+      .tab-panel {
+        display: block;
+      }
+
+      .tab-panel[hidden] {
+        display: none;
+      }
+
+      .metric-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: grid;
+        gap: 12px;
+      }
+
+      .metric-list li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+        padding: 12px 14px;
+        border-radius: 12px;
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid var(--line);
+      }
+
+      .metric-list strong {
+        color: var(--text);
+      }
+
+      .metric-list span {
+        color: var(--muted);
+        font-weight: 700;
+      }
+
+      .timeline {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        gap: 14px;
+      }
+
+      .timeline li {
+        position: relative;
+        padding-left: 20px;
+        border-left: 2px solid rgba(248, 199, 107, 0.6);
+        padding-bottom: 8px;
+      }
+
+      .timeline li:last-child {
+        padding-bottom: 0;
+      }
+
+      .timeline li::before {
+        content: "";
+        position: absolute;
+        left: -7px;
+        top: 4px;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: var(--primary);
+        box-shadow: 0 0 0 4px rgba(248, 199, 107, 0.12);
+      }
+
+      .timeline strong {
+        display: block;
+        margin-bottom: 4px;
+      }
+
+      .timeline span {
+        color: var(--muted);
+      }
+
+      .narrative {
+        margin-top: 22px;
+        padding: 28px 26px;
+      }
+
+      .feature-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(180px, 1fr));
+        gap: 16px;
+      }
+
+      .feature {
+        padding: 18px 16px;
+        border-radius: 18px;
+        border: 1px solid var(--line);
+        background: rgba(255, 255, 255, 0.03);
+      }
+
+      .feature .icon {
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+      }
+
+      .feature h3 {
+        margin: 0 0 8px;
+        font-size: 1.08rem;
+      }
+
+      .feature p {
+        margin: 0;
+        color: var(--muted);
+      }
+
+      .details-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(150px, 1fr));
+        gap: 14px;
+        margin-top: 20px;
+      }
+
+      .detail-box {
+        padding: 14px 16px;
+        border-radius: 14px;
+        border: 1px solid var(--line);
+        background: rgba(255, 255, 255, 0.026);
+      }
+
+      .detail-box .label {
+        display: block;
+        color: var(--muted);
+        font-size: 0.72rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        margin-bottom: 8px;
+      }
+
+      .detail-box .value {
+        font-weight: 700;
+      }
+
+      @media (max-width: 900px) {
+        .hero {
+          grid-template-columns: 1fr;
+        }
+
+        .content-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .feature-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 620px) {
+        .page-shell {
+          width: min(100% - 20px, 1180px);
+          margin-top: 18px;
+        }
+
+        .topbar {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .hero-content,
+        .panel,
+        .narrative {
+          padding-left: 18px;
+          padding-right: 18px;
+        }
+
+        .hero-stats,
+        .details-grid {
+          grid-template-columns: repeat(2, minmax(120px, 1fr));
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <div class="page-shell">
+      <header class="topbar" aria-label="Navegación principal">
+        <div class="brand" aria-label="Marca del perfil">
+          <div class="brand-mark">EV</div>
+          <div>
+            <small>Perfil del jugador</small>
+            <strong>Enner Valencia</strong>
+          </div>
+        </div>
+
+        <nav class="nav" aria-label="Secciones principales">
+          <a href="#perfil">Perfil</a>
+          <a href="#estadisticas">Estadísticas</a>
+          <a href="#trayectoria">Trayectoria</a>
+          <a href="#logros">Logros</a>
+        </nav>
+      </header>
+
+      <main id="contenido">
+        <section class="hero card" id="perfil" aria-labelledby="player-name">
+          <div class="hero-media">
+            <img
+              class="player-photo"
+              src="https://upload.wikimedia.org/wikipedia/commons/f/fe/Enner_Valencia_%2824735821595%29_%28cropped%29.jpg"
+              alt="Retrato de Enner Valencia, delantero ecuatoriano."
+            />
+          </div>
+
+          <div class="hero-content">
+            <div class="pill">Futbolista profesional</div>
+            <h1 id="player-name">Enner</h1>
+            <p class="surname">Valencia</p>
+
+            <p class="summary">
+              Delantero ecuatoriano con un juego intenso, directo y decisivo. Su capacidad para
+              romper líneas, ganar duelos y convertir situaciones complejas lo ha convertido en un
+              referente clave para la selección de Ecuador y para los clubes donde ha defendido sus
+              colores.
+            </p>
+
+            <div class="hero-stats" aria-label="Estadísticas destacadas">
+              <div class="stat-box">
+                <strong>36</strong>
+                <span>Edad</span>
+              </div>
+              <div class="stat-box">
+                <strong>13</strong>
+                <span>Número</span>
+              </div>
+              <div class="stat-box">
+                <strong>ECU</strong>
+                <span>Nacionalidad</span>
+              </div>
+              <div class="stat-box">
+                <strong>77</strong>
+                <span>Altura cm</span>
+              </div>
+            </div>
+
+            <div class="actions" aria-label="Acciones principales">
+              <a class="button primary" href="#estadisticas">Ver estadísticas</a>
+              <a class="button secondary" href="#trayectoria">Ver trayectoria</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="content-grid">
+          <article class="panel card" id="estadisticas" aria-labelledby="stats-heading">
+            <h2 id="stats-heading">Estadísticas y estilo</h2>
+
+            <div class="tabs" role="tablist" aria-label="Secciones estadísticas">
+              <button class="tab-button" role="tab" aria-selected="true" aria-controls="panel-resumen" id="tab-resumen" tabindex="0" type="button">
+                Resumen
+              </button>
+              <button class="tab-button" role="tab" aria-selected="false" aria-controls="panel-goles" id="tab-goles" tabindex="-1" type="button">
+                Goles
+              </button>
+              <button class="tab-button" role="tab" aria-selected="false" aria-controls="panel-estilo" id="tab-estilo" tabindex="-1" type="button">
+                Estilo
+              </button>
+            </div>
+
+            <div class="tab-panel" id="panel-resumen" role="tabpanel" aria-labelledby="tab-resumen">
+              <ul class="metric-list" aria-label="Resumen del jugador">
+                <li><strong>Posición</strong><span>Delantero / extremo</span></li>
+                <li><strong>Pie</strong><span>Derecho</span></li>
+                <li><strong>Club actual</strong><span>Boca Juniors</span></li>
+                <li><strong>Selección</strong><span>Ecuador</span></li>
+              </ul>
+            </div>
+
+            <div class="tab-panel" id="panel-goles" role="tabpanel" aria-labelledby="tab-goles" hidden>
+              <ul class="metric-list" aria-label="Datos de gol">
+                <li><strong>Visión de juego</strong><span>Alta</span></li>
+                <li><strong>Remate</strong><span>Preciso</span></li>
+                <li><strong>Goles decisivos</strong><span>Frecuentes</span></li>
+                <li><strong>Capacidad de liderazgo</strong><span>Muy alta</span></li>
+              </ul>
+            </div>
+
+            <div class="tab-panel" id="panel-estilo" role="tabpanel" aria-labelledby="tab-estilo" hidden>
+              <ul class="metric-list" aria-label="Estilo de juego">
+                <li><strong>Velocidad</strong><span>Explosiva</span></li>
+                <li><strong>Desborde</strong><span>Constante</span></li>
+                <li><strong>Presión</strong><span>Intensa</span></li>
+                <li><strong>Trabajo colectivo</strong><span>Comprometido</span></li>
+              </ul>
+            </div>
+          </article>
+
+          <aside class="panel card" id="trayectoria" aria-labelledby="career-heading">
+            <h2 id="career-heading">Trayectoria</h2>
+            <ul class="timeline" aria-label="Cronología de trayectoria">
+              <li>
+                <strong>Inicios</strong>
+                <span>Formación y primeros pasos como futbolista profesional.</span>
+              </li>
+              <li>
+                <strong>Éxito internacional</strong>
+                <span>Consolidación como referente ofensivo en torneos internacionales.</span>
+              </li>
+              <li>
+                <strong>Selección ecuatoriana</strong>
+                <span>Importante participación y liderazgo en la tricolor.</span>
+              </li>
+              <li>
+                <strong>Presente</strong>
+                <span>Continuidad competitiva en el fútbol de alto nivel.</span>
+              </li>
+            </ul>
+          </aside>
+        </section>
+
+        <section class="narrative card" id="logros" aria-labelledby="features-heading">
+          <h2 id="features-heading">Qué lo define</h2>
+
+          <div class="feature-grid">
+            <article class="feature">
+              <div class="icon" aria-hidden="true">⚡</div>
+              <h3>Velocidad</h3>
+              <p>Capacidad para llegar a la línea de fondo y crear espacio con rapidez.</p>
+            </article>
+
+            <article class="feature">
+              <div class="icon" aria-hidden="true">🎯</div>
+              <h3>Decisividad</h3>
+              <p>Se presenta en momentos clave y aporta gol con claridad y criterio.</p>
+            </article>
+
+            <article class="feature">
+              <div class="icon" aria-hidden="true">🧠</div>
+              <h3>Liderazgo</h3>
+              <p>Su personalidad y actitud marcan diferencia dentro y fuera del campo.</p>
+            </article>
+          </div>
+
+          <div class="details-grid" aria-label="Datos principales del jugador">
+            <div class="detail-box">
+              <span class="label">Nacionalidad</span>
+              <span class="value">Ecuatoriana</span>
+            </div>
+            <div class="detail-box">
+              <span class="label">Altura</span>
+              <span class="value">1,77 m</span>
+            </div>
+            <div class="detail-box">
+              <span class="label">Posición</span>
+              <span class="value">Delantero</span>
+            </div>
+            <div class="detail-box">
+              <span class="label">Equipo</span>
+              <span class="value">Boca Juniors</span>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script>
+      const tabs = document.querySelectorAll('[role="tab"]');
+      const panels = document.querySelectorAll('.tab-panel');
+
+      function activateTab(targetTab) {
+        tabs.forEach((tab) => {
+          const isSelected = tab === targetTab;
+          tab.setAttribute('aria-selected', String(isSelected));
+          tab.tabIndex = isSelected ? 0 : -1;
+        });
+
+        panels.forEach((panel) => {
+          const isActive = panel.id === targetTab.getAttribute('aria-controls');
+          panel.hidden = !isActive;
+        });
+      }
+
+      tabs.forEach((tab) => {
+        tab.addEventListener('click', () => activateTab(tab));
+
+        tab.addEventListener('keydown', (event) => {
+          const currentIndex = [...tabs].indexOf(tab);
+          let nextIndex = currentIndex;
+
+          if (event.key === 'ArrowRight') {
+            nextIndex = (currentIndex + 1) % tabs.length;
+          }
+
+          if (event.key === 'ArrowLeft') {
+            nextIndex = (currentIndex - 1 + tabs.length) % tabs.length;
+          }
+
+          if (event.key === 'Home') {
+            nextIndex = 0;
+          }
+
+          if (event.key === 'End') {
+            nextIndex = tabs.length - 1;
+          }
+
+          if (nextIndex !== currentIndex) {
+            event.preventDefault();
+            tabs[nextIndex].focus();
+            activateTab(tabs[nextIndex]);
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

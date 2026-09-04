@@ -1,7 +1,7 @@
 ---
 name: Auditor
-description: Use this agent to audit security, code quality, architecture, DX, and production risk before merge or deployment. Best for code reviews, security checks, bug triage, and prioritization of fixes.
-model: Claude Sonnet 4
+description: Use this agent to audit security, code quality, architecture, DX, and production risk before merge or deployment. Best for code reviews, security checks, bug triage, and prioritization of fixes. Prefer OpenCode for this review path when available.
+model: OpenCode
 ---
 
 # Auditor agent
