@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Perfil completo de Enner Valencia: datos, trayectoria, estilo de juego y logros del delantero ecuatoriano."
+    />
+    <title>Enner Valencia | Perfil completo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                50: '#eef5ff',
+                100: '#dbeafe',
+                500: '#1d4ed8',
+                700: '#123d7e',
+                900: '#0f172a'
+              },
+              slate: {
+                950: '#0f172a'
+              }
+            },
+            boxShadow: {
+              soft: '0 20px 40px rgba(15, 23, 42, 0.08)'
+            }
+          }
+        }
+      };
+    </script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        background: linear-gradient(180deg, #eef4ff 0%, #f8fafc 100%);
+      }
+    </style>
+  </head>
+  <body class="text-slate-800 antialiased">
+    <div class="container mx-auto px-4 py-5">
+      <header class="bg-slate-950 text-white rounded-full shadow-soft px-5 py-3">
+        <div class="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
+          <div class="flex items-center gap-3">
+            <div class="grid h-12 w-12 place-items-center rounded-2xl bg-gradient-to-br from-blue-600 to-slate-900 font-bold text-white">
+              EV
+            </div>
+            <div>
+              <small class="block text-xs uppercase tracking-[0.2em] text-slate-300">Perfil del jugador</small>
+              <strong class="text-lg">Enner Valencia</strong>
+            </div>
+          </div>
+
+          <nav class="flex flex-wrap gap-3 text-sm font-semibold md:gap-5" aria-label="Secciones principales">
+            <a class="text-slate-300 transition hover:text-white" href="#perfil">Perfil</a>
+            <a class="text-slate-300 transition hover:text-white" href="#estadisticas">Estadísticas</a>
+            <a class="text-slate-300 transition hover:text-white" href="#trayectoria">Trayectoria</a>
+            <a class="text-slate-300 transition hover:text-white" href="#logros">Logros</a>
+          </nav>
+        </div>
+      </header>
+    </div>
+
+    <main id="contenido" class="container mx-auto px-4 pb-12">
+      <section id="perfil" class="mt-6 overflow-hidden rounded-[28px] border border-slate-200 bg-white/80 p-5 shadow-soft backdrop-blur md:p-8" aria-labelledby="player-name">
+        <div class="grid items-center gap-6 lg:grid-cols-[1.05fr_1.35fr]">
+          <div>
+            <img
+              class="h-[420px] w-full rounded-[24px] object-cover shadow-xl shadow-blue-100 ring-2 ring-blue-100 md:h-[520px]"
+              src="https://upload.wikimedia.org/wikipedia/commons/f/fe/Enner_Valencia_%2824735821595%29_%28cropped%29.jpg"
+              alt="Retrato de Enner Valencia, delantero ecuatoriano."
+            />
+          </div>
+
+          <div>
+            <span class="inline-flex rounded-full bg-blue-100 px-3 py-2 text-xs font-bold uppercase tracking-[0.18em] text-blue-700">
+              Futbolista profesional
+            </span>
+            <h1 id="player-name" class="mt-4 text-5xl font-black leading-none tracking-[-0.08em] text-slate-900 md:text-7xl">Enner</h1>
+            <p class="text-4xl font-extrabold tracking-[-0.06em] text-blue-700 md:text-6xl">Valencia</p>
+
+            <p class="mt-4 max-w-2xl text-base leading-8 text-slate-600 md:text-lg">
+              Delantero ecuatoriano con un juego intenso, directo y decisivo. Su capacidad para
+              romper líneas, ganar duelos y convertir situaciones complejas lo ha convertido en un
+              referente clave para la selección de Ecuador y para los clubes donde ha defendido sus
+              colores.
+            </p>
+
+            <div class="mt-5 grid grid-cols-2 gap-3 md:grid-cols-4">
+              <div class="rounded-2xl border border-slate-200 bg-slate-50 p-4 text-center">
+                <strong class="block text-2xl font-black text-blue-700">36</strong>
+                <span class="text-xs uppercase tracking-[0.12em] text-slate-500">Edad</span>
+              </div>
+              <div class="rounded-2xl border border-slate-200 bg-slate-50 p-4 text-center">
+                <strong class="block text-2xl font-black text-blue-700">13</strong>
+                <span class="text-xs uppercase tracking-[0.12em] text-slate-500">Número</span>
+              </div>
+              <div class="rounded-2xl border border-slate-200 bg-slate-50 p-4 text-center">
+                <strong class="block text-2xl font-black text-blue-700">ECU</strong>
+                <span class="text-xs uppercase tracking-[0.12em] text-slate-500">Nacionalidad</span>
+              </div>
+              <div class="rounded-2xl border border-slate-200 bg-slate-50 p-4 text-center">
+                <strong class="block text-2xl font-black text-blue-700">77</strong>
+                <span class="text-xs uppercase tracking-[0.12em] text-slate-500">Altura cm</span>
+              </div>
+            </div>
+
+            <div class="mt-6 flex flex-wrap gap-3">
+              <a href="#estadisticas" class="inline-flex rounded-full bg-gradient-to-r from-blue-600 to-blue-800 px-5 py-3 text-sm font-bold text-white shadow-lg shadow-blue-200 transition hover:scale-[1.02]">
+                Ver estadísticas
+              </a>
+              <a href="#trayectoria" class="inline-flex rounded-full border border-blue-700 bg-white px-5 py-3 text-sm font-bold text-blue-700 transition hover:bg-blue-50">
+                Ver trayectoria
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-8 grid gap-6 lg:grid-cols-[1.5fr_0.9fr]">
+        <article id="estadisticas" class="rounded-[28px] border border-slate-200 bg-white/80 p-5 shadow-soft backdrop-blur md:p-7" aria-labelledby="stats-heading">
+          <h2 id="stats-heading" class="mb-4 text-2xl font-black text-slate-900">Estadísticas y estilo</h2>
+
+          <div class="flex flex-wrap gap-3" role="tablist" aria-label="Secciones estadísticas">
+            <button class="tab-btn rounded-full bg-blue-700 px-4 py-2 text-sm font-semibold text-white" role="tab" aria-selected="true" aria-controls="panel-resumen" id="tab-resumen" type="button">Resumen</button>
+            <button class="tab-btn rounded-full bg-slate-100 px-4 py-2 text-sm font-semibold text-slate-600" role="tab" aria-selected="false" aria-controls="panel-goles" id="tab-goles" type="button">Goles</button>
+            <button class="tab-btn rounded-full bg-slate-100 px-4 py-2 text-sm font-semibold text-slate-600" role="tab" aria-selected="false" aria-controls="panel-estilo" id="tab-estilo" type="button">Estilo</button>
+          </div>
+
+          <div class="mt-5 space-y-4 tab-panel" id="panel-resumen" role="tabpanel" aria-labelledby="tab-resumen">
+            <div class="flex items-center justify-between border-b border-slate-200 pb-3">
+              <strong>Posición</strong>
+              <span>Delantero / extremo</span>
+            </div>
+            <div class="flex items-center justify-between border-b border-slate-200 pb-3">
+              <strong>Pie</strong>
+              <span>Derecho</span>
+            </div>
+            <div class="flex items-center justify-between border-b border-slate-200 pb-3">
+              <strong>Club actual</strong>
+              <span>Boca Juniors</span>
+            </div>
+            <div class="flex items-center justify-between pb-2">
+              <strong>Selección</strong>
+              <span>Ecuador</span>
+            </div>
+          </div>
+
+          <div class="mt-5 hidden space-y-4 tab-panel" id="panel-goles" role="tabpanel" aria-labelledby="tab-goles">
+            <div class="flex items-center justify-between border-b border-slate-200 pb-3">
+              <strong>Visión de juego</strong>
+              <span>Alta</span>
+            </div>
+            <div class="flex items-center justify-between border-b border-slate-200 pb-3">
+              <strong>Remate</strong>
+              <span>Preciso</span>
+            </div>
+            <div class="flex items-center justify-between border-b border-slate-200 pb-3">
+              <strong>Goles decisivos</strong>
+              <span>Frecuentes</span>
+            </div>
+            <div class="flex items-center justify-between pb-2">
+              <strong>Capacidad de liderazgo</strong>
+              <span>Muy alta</span>
+            </div>
+          </div>
+
+          <div class="mt-5 hidden space-y-4 tab-panel" id="panel-estilo" role="tabpanel" aria-labelledby="tab-estilo">
+            <div class="flex items-center justify-between border-b border-slate-200 pb-3">
+              <strong>Velocidad</strong>
+              <span>Explosiva</span>
+            </div>
+            <div class="flex items-center justify-between border-b border-slate-200 pb-3">
+              <strong>Desborde</strong>
+              <span>Constante</span>
+            </div>
+            <div class="flex items-center justify-between border-b border-slate-200 pb-3">
+              <strong>Presión</strong>
+              <span>Intensa</span>
+            </div>
+            <div class="flex items-center justify-between pb-2">
+              <strong>Trabajo colectivo</strong>
+              <span>Comprometido</span>
+            </div>
+          </div>
+        </article>
+
+        <aside id="trayectoria" class="rounded-[28px] border border-slate-200 bg-white/80 p-5 shadow-soft backdrop-blur md:p-7" aria-labelledby="career-heading">
+          <h2 id="career-heading" class="mb-4 text-2xl font-black text-slate-900">Trayectoria</h2>
+          <div class="space-y-4 border-l-2 border-blue-100 pl-4">
+            <div>
+              <strong class="block text-base text-slate-900">Inicios</strong>
+              <span class="text-sm text-slate-600">Formación y primeros pasos como futbolista profesional.</span>
+            </div>
+            <div>
+              <strong class="block text-base text-slate-900">Éxito internacional</strong>
+              <span class="text-sm text-slate-600">Consolidación como referente ofensivo en torneos internacionales.</span>
+            </div>
+            <div>
+              <strong class="block text-base text-slate-900">Selección ecuatoriana</strong>
+              <span class="text-sm text-slate-600">Importante participación y liderazgo en la tricolor.</span>
+            </div>
+            <div>
+              <strong class="block text-base text-slate-900">Presente</strong>
+              <span class="text-sm text-slate-600">Continuidad competitiva en el fútbol de alto nivel.</span>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section id="logros" class="mt-8 rounded-[28px] border border-slate-200 bg-white/80 p-5 shadow-soft backdrop-blur md:p-7" aria-labelledby="features-heading">
+        <h2 id="features-heading" class="mb-5 text-2xl font-black text-slate-900">Qué lo define</h2>
+
+        <div class="grid gap-5 md:grid-cols-3">
+          <article class="rounded-2xl border border-slate-200 bg-slate-50 p-5">
+            <div class="mb-3 grid h-14 w-14 place-items-center rounded-2xl bg-blue-100 text-2xl">⚡</div>
+            <h3 class="text-xl font-bold text-slate-900">Velocidad</h3>
+            <p class="mt-2 text-sm leading-7 text-slate-600">Capacidad para llegar a la línea de fondo y crear espacio con rapidez.</p>
+          </article>
+
+          <article class="rounded-2xl border border-slate-200 bg-slate-50 p-5">
+            <div class="mb-3 grid h-14 w-14 place-items-center rounded-2xl bg-blue-100 text-2xl">🎯</div>
+            <h3 class="text-xl font-bold text-slate-900">Decisividad</h3>
+            <p class="mt-2 text-sm leading-7 text-slate-600">Se presenta en momentos clave y aporta gol con claridad y criterio.</p>
+          </article>
+
+          <article class="rounded-2xl border border-slate-200 bg-slate-50 p-5">
+            <div class="mb-3 grid h-14 w-14 place-items-center rounded-2xl bg-blue-100 text-2xl">🧠</div>
+            <h3 class="text-xl font-bold text-slate-900">Liderazgo</h3>
+            <p class="mt-2 text-sm leading-7 text-slate-600">Su personalidad y actitud marcan diferencia dentro y fuera del campo.</p>
+          </article>
+        </div>
+
+        <div class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <div class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <span class="block text-[10px] font-bold uppercase tracking-[0.18em] text-slate-500">Nacionalidad</span>
+            <span class="mt-2 block text-lg font-extrabold text-blue-700">Ecuatoriana</span>
+          </div>
+          <div class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <span class="block text-[10px] font-bold uppercase tracking-[0.18em] text-slate-500">Altura</span>
+            <span class="mt-2 block text-lg font-extrabold text-blue-700">1,77 m</span>
+          </div>
+          <div class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <span class="block text-[10px] font-bold uppercase tracking-[0.18em] text-slate-500">Posición</span>
+            <span class="mt-2 block text-lg font-extrabold text-blue-700">Delantero</span>
+          </div>
+          <div class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <span class="block text-[10px] font-bold uppercase tracking-[0.18em] text-slate-500">Equipo</span>
+            <span class="mt-2 block text-lg font-extrabold text-blue-700">Boca Juniors</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      const tabs = document.querySelectorAll('[role="tab"]');
+      const panels = document.querySelectorAll('.tab-panel');
+
+      function activateTab(targetTab) {
+        tabs.forEach((tab) => {
+          const isSelected = tab === targetTab;
+          tab.setAttribute('aria-selected', String(isSelected));
+          tab.classList.toggle('bg-blue-700', isSelected);
+          tab.classList.toggle('text-white', isSelected);
+          tab.classList.toggle('bg-slate-100', !isSelected);
+          tab.classList.toggle('text-slate-600', !isSelected);
+        });
+
+        panels.forEach((panel) => {
+          const isActive = panel.id === targetTab.getAttribute('aria-controls');
+          panel.classList.toggle('hidden', !isActive);
+        });
+      }
+
+      tabs.forEach((tab) => {
+        tab.addEventListener('click', () => activateTab(tab));
+
+        tab.addEventListener('keydown', (event) => {
+          const currentIndex = [...tabs].indexOf(tab);
+          let nextIndex = currentIndex;
+
+          if (event.key === 'ArrowRight') nextIndex = (currentIndex + 1) % tabs.length;
+          if (event.key === 'ArrowLeft') nextIndex = (currentIndex - 1 + tabs.length) % tabs.length;
+          if (event.key === 'Home') nextIndex = 0;
+          if (event.key === 'End') nextIndex = tabs.length - 1;
+
+          if (nextIndex !== currentIndex) {
+            event.preventDefault();
+            tabs[nextIndex].focus();
+            activateTab(tabs[nextIndex]);
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
