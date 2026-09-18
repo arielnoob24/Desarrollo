@@ -1,14 +1,14 @@
 :root {
-  --bg: #071722;
-  --bg-2: #12314d;
-  --bg-3: #1a3558;
-  --panel: rgba(12, 24, 38, 0.9);
+  --bg: #0a1624;
+  --bg-2: #112f46;
+  --bg-3: #1d3f5f;
+  --panel: rgba(12, 24, 38, 0.88);
   --panel-alt: rgba(19, 33, 48, 0.96);
-  --primary: #f8c76b;
-  --secondary: #53d3c6;
-  --tertiary: #91b7ff;
+  --primary: #f3c76c;
+  --secondary: #5ad7d1;
+  --tertiary: #9ec5ff;
   --text: #edf6ff;
-  --muted: #c1d0e5;
+  --muted: #c9d7ea;
   --line: rgba(255, 255, 255, 0.12);
   --shadow: rgba(3, 9, 17, 0.44);
   --focus: #7dd3fc;
@@ -27,10 +27,8 @@ html {
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background: linear-gradient(140deg, var(--bg), var(--bg-2) 35%, var(--bg-3));
-  color: var(--text);
-  line-height: 1.6;
-}
+        background: radial-gradient(circle at top, rgba(243, 199, 108, 0.12), transparent 18%),
+          linear-gradient(140deg, var(--bg), var(--bg-2) 35%, var(--bg-3));
 
 img {
   max-width: 100%;
@@ -137,9 +135,8 @@ img:focus-visible {
 }
 
 .card {
-  background: var(--panel);
-  border: 1px solid var(--line);
-  border-radius: 26px;
+        background: rgba(15, 28, 42, 0.9);
+        border: 1px solid rgba(255, 255, 255, 0.08);
   box-shadow: 0 24px 60px var(--shadow);
 }
 
@@ -198,37 +195,36 @@ h1 {
   margin: 18px 0 8px;
   font-size: clamp(2.8rem, 4vw, 4.5rem);
   line-height: 0.95;
-  color: red;
-}
+        color: var(--primary);
+        letter-spacing: -0.06em;
+      }
 
-.surname {
-  margin: 0 0 16px;
-  color: var(--primary);
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  font-size: 1rem;
-}
+      .surname {
+        margin: 0 0 16px;
+        color: var(--text);
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        font-size: 1.15rem;
+        font-weight: 800;
+      }
 
-.summary {
-  max-width: 60ch;
-  margin: 0;
-  color: var(--muted);
-  font-size: 1.05rem;
-}
-
-.hero-stats {
-  display: grid;
+      .summary {
+        max-width: 60ch;
+        margin: 0;
+        color: var(--muted);
+        font-size: 1.05rem;
+        line-height: 1.8;
   grid-template-columns: repeat(4, minmax(100px, 1fr));
   gap: 14px;
   margin-top: 28px;
 }
 
 .stat-box {
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid var(--line);
-  border-radius: 18px;
-  padding: 16px 12px;
-}
+        background: rgba(255, 255, 255, 0.035);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 18px;
+        padding: 16px 12px;
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
 
 .stat-box strong {
   display: block;
@@ -267,14 +263,15 @@ h1 {
 }
 
 .button.primary {
-  background: var(--primary);
-  color: #0c1520;
-  border-color: transparent;
-}
+        background: linear-gradient(135deg, var(--primary), #dca64b);
+        color: #0d1721;
+        border-color: transparent;
+        box-shadow: 0 16px 30px rgba(243, 199, 108, 0.2);
+      }
 
-.button.secondary {
-  background: rgba(255, 255, 255, 0.02);
-}
+      .button.secondary {
+        background: rgba(255, 255, 255, 0.03);
+        border-color: rgba(255, 255, 255, 0.12);
 
 .button:hover,
 .button:focus-visible {
@@ -345,15 +342,7 @@ h1 {
   padding: 12px 14px;
   border-radius: 12px;
   background: rgba(255, 255, 255, 0.03);
-  border: 1px solid var(--line);
-}
-
-.metric-list strong {
-  color: var(--text);
-}
-
-.metric-list span {
-  color: var(--muted);
+        border: 1px solid rgba(255, 255, 255, 0.08);
   font-weight: 700;
 }
 
@@ -411,11 +400,9 @@ h1 {
 .feature {
   padding: 18px 16px;
   border-radius: 18px;
-  border: 1px solid var(--line);
-  background: rgba(255, 255, 255, 0.03);
-}
-
-.feature .icon {
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        background: rgba(255, 255, 255, 0.03);
+        min-height: 100%;
   font-size: 1.8rem;
   margin-bottom: 10px;
 }
@@ -440,11 +427,8 @@ h1 {
 .detail-box {
   padding: 14px 16px;
   border-radius: 14px;
-  border: 1px solid var(--line);
-  background: rgba(255, 255, 255, 0.026);
-}
-
-.detail-box .label {
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        background: rgba(255, 255, 255, 0.03);
   display: block;
   color: var(--muted);
   font-size: 0.72rem;
